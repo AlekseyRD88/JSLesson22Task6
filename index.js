@@ -1,5 +1,4 @@
-let buttonElem = document.querySelector('.single-use-btn');
+document.querySelector('.single-use-btn').addEventListener('click', getClick, { once: true });
 function getClick() {
   console.log('clicked');
 }
-buttonElem.addEventListener('click', getClick, { once: true });
